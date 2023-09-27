@@ -5,8 +5,6 @@ let booksTotal = [];
 let visibleBooks = [];
 let cartBooks = [];
 
-window.onload = getBooks;
-
 function getBooks() {
   let requestOptions = {
     method: 'GET',
@@ -48,3 +46,32 @@ function displayBooks(data) {
   })
 }
 
+window.onload = getBooks;
+
+
+
+
+// const filterInput = document.getElementById("searchInput");
+// const resultsList = document.getElementById("resultsList");
+
+// filterInput.addEventListener("input", function() {
+//   const searchText = filterInput.value.toLowerCase();
+//   const filteredBooks = library.filter(book => {
+//   return (
+//     book.title.toLowerCase().includes(searchText) ||
+//     book.author.toLowerCase().includes(searchText)
+//       );
+//     });
+//     displayResults(filteredBooks);  
+//   });
+//   function displayResults(books) {
+//     booksArea.innerHTML = '';
+//     if (books.length === 0) {
+//       booksArea.innerHTML = 'No Match';
+//       return;
+//     }
+  
+//   books.forEach(book => {
+    
+//   });
+//   }
